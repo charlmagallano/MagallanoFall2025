@@ -1,0 +1,90 @@
+/* typography and body setup */
+body {
+    background-color: #c4afd2;
+    color: #2a252e;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* headings */
+h1,
+h2,
+h3 {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* header section */
+header {
+    background-color: #974ab5;
+    text-align: center;
+    padding: 30px;
+    color: #ffffff;
+}
+
+/* navigation */
+nav {
+    background-color: #2d1b34;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    margin: 15px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+nav a:visited {
+    color: #cccccc;
+}
+
+/* images inside main content */
+main img {
+    width: 250px;
+    height: auto;
+    border: 4px solid #c5a3d8;
+    /* lavender border to match accents */
+    padding: 8px;
+    margin: 15px;
+    background-color: #ffffff;
+    /* clean background */
+    border-radius: 10px;
+    filter: grayscale(10%);
+    box-shadow: 2px 2px 8px #aaa;
+}
+
+/* footer */
+footer {
+    background-color: #2d1b34;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: #ffcc00;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
+
+/* blockquotes for index */
+blockquote {
+    font-style: italic;
+    border-left: 5px solid #974ab5;
+    padding-left: 15px;
+    margin: 15px 0;
+}
