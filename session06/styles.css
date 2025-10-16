@@ -1,0 +1,146 @@
+/* START border-box fix */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* END border-box fix */
+
+.instrument-serif-regular {
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.instrument-serif-regular-italic {
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.bbh-sans-bogle-regular {
+  font-family: "BBH Sans Bogle", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+body {
+    background-color: rgb(28, 118, 73);
+
+}
+
+div.container {
+    width: 80%;
+    background-color: #229C67;
+    /* center the div container */
+    margin: 40px auto;
+}
+
+header,
+nav,
+main,
+aside,
+footer {
+    padding: 20px;
+}
+
+header {
+  font-family: "Instrument Serif", serif;
+  background-color: #33E89A;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  font-family: "Instrument Serif", serif;
+  float: left;
+  width: 20%;
+  background-color: transparent;
+  padding: 20px;
+}
+
+main {
+  font-family: "Instrument Serif", serif;
+  float: left;
+  width: 55%;
+  background-color: #1B7A50;
+  padding: 20px;
+}
+
+aside {
+  font-family: "Instrument Serif", serif;
+  float: left;
+  width: 25%;
+  background-color: #229C67;
+  padding: 20px;
+}
+
+footer {
+  font-family: "Instrument Serif", serif;
+  clear: both;
+  background-color: #33E89A;
+  text-align: center;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-bottom: 10px;
+  background-color: #13583A;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+nav a:hover {
+  color: #33E89A;
+}
+
+
+
+
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.gallery figure {
+  width: 30%;
+  margin: 0;
+  background-color: #229C67;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.gallery figcaption {
+  color: white;
+  font-size: 0.9em;
+  margin-top: 5px;
+}
