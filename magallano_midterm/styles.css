@@ -1,0 +1,240 @@
+/* fonts - defines serif and italic font styles */
+.instrument-serif-regular {
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.instrument-serif-regular-italic {
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: #D2DAE7;
+  /* light background */
+  color: #161E4D;
+  /* main text color */
+  font-family: Inter, sans-serif;
+  line-height: 1.45;
+}
+
+/* layout - main page grid setup */
+.wrapper {
+  width: min(1100px, 92%);
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 12px;
+}
+
+.wrapper>* {
+  background-color: #ffffff;
+  border: 1px solid #e0e4ef;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+}
+
+/* grid areas - assigns columns for each page section */
+header,
+footer {
+  grid-column: 1 / -1;
+}
+
+nav {
+  grid-column: 1 / 4;
+}
+
+main {
+  grid-column: 4 / 11;
+}
+
+aside {
+  grid-column: 11 / 13;
+}
+
+/* header - styles main heading and subtitle */
+header h1 {
+  margin: 0 0 6px;
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-size: 32px;
+  letter-spacing: 0.3px;
+}
+
+header p {
+  margin: 0;
+  color: #2a335e;
+  /* muted ink */
+  font-family: Inter, sans-serif;
+}
+
+/* navigation - styles vertical nav links */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+nav a {
+  display: block;
+  padding: 10px 12px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #161E4D;
+  background-color: #e8edf5;
+  border: 1px solid transparent;
+  font-family: Inter, sans-serif;
+}
+
+nav a:hover {
+  border-color: #6F87A6;
+}
+
+nav a.active {
+  background-color: #f1f3f7;
+  border-color: #6F87A6;
+  font-weight: 600;
+}
+
+/* text styles - sets font for headings and  paragraphs */
+h2,
+h3 {
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  margin: 3.2px 0 12.8px;
+}
+
+.lede {
+  font-size: 1.05rem;
+  color: #2a335e;
+  font-family: Inter, sans-serif;
+}
+
+/* gallery - grid layout for image sections */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.gallery img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  background-color: #f7f7f7;
+}
+
+/* store - grid layout for product cards */
+.store-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+/* card - defines layout and look for each product */
+.card {
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  gap: 10px;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #e6e6e6;
+  background-color: #ffffff;
+  font-family: Inter, sans-serif;
+}
+
+.card img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 10px;
+  background-color: #f3f3f3;
+  border: 1px solid #eee;
+}
+
+.card h3 {
+  margin: 2px 0 0;
+  font-size: 24;
+  font-family: "Instrument Serif", serif;
+}
+
+.price {
+  font-weight: 600;
+  color: #161E4D;
+}
+
+/* button - sets style for buy buttons */
+.btn {
+  border: 1px solid #C92116;
+  background-color: #C92116;
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 10px 12px;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: Inter, sans-serif;
+}
+
+.btn:hover {
+  filter: brightness(0.95);
+}
+
+/* info page - styles snack descriptions */
+.info-list {
+  display: grid;
+  gap: 12px;
+}
+
+.info-item {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #e6e6e6;
+  background-color: #ffffff;
+  font-family: Inter, sans-serif;
+}
+
+/* footer - styles bottom copyright area */
+footer {
+  text-align: center;
+  color: #2a335e;
+  font-size: 16;
+  font-family: Inter, sans-serif;
+}
+
+/* animation - adds hover pop effect to cards */
+@keyframes pop {
+  from {
+    transform: scale(1);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+  }
+
+  to {
+    transform: scale(1.03);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.card:hover {
+  animation: pop 0.3s ease-in-out forwards;
+}
